@@ -25,7 +25,7 @@ SECRET_KEY = '161gjs(u+s)q=9!@1xkfe29q3eutl%#n3yihl=x%9@!4v$h7@('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://karmalist.herokuapp.com/']
 
 
 # Application definition
@@ -119,5 +119,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 #Django will forward us to the login page, if visitor wanted to load restriced page
 LOGIN_URL = '/login'
+
+try:
+    from . import local_settings
+except:
+    print('No such file found')
