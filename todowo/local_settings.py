@@ -1,2 +1,2 @@
 DEBUG=True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['karmatodo.herokuapp.com']
