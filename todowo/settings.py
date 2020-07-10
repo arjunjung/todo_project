@@ -26,7 +26,7 @@ SECRET_KEY = '161gjs(u+s)q=9!@1xkfe29q3eutl%#n3yihl=x%9@!4v$h7@('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://karmatodo.herokuapp.com/']
+ALLOWED_HOSTS = ['karmatodo.herokuapp.com']
 
 
 # Application definition
@@ -108,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC+05:45'
 
 USE_I18N = True
 
