@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django-heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -36,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.sthticfiles',
+    'django.contrib.staticfiles',
     'todo',
 ]
 
@@ -125,6 +126,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 LOGIN_URL = '/login'
 
 try:
-    from . import local_settings
+    from .local_settings import *
 except:
     print('No such file found')
+
+#django-heroku
+django_heroku.settings(locals())
