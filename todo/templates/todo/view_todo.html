@@ -33,7 +33,7 @@
             </form>
         </div>
     </div>
-    {% if todo.datecompleted is None %}
+    {% if todo.dateCompleted is None %}
         <form style='display: none;' method="POST" action="{% url 'complete_todo' todo.id %}">
             {% csrf_token %}
             <button id="complete" type="submit">Complete</button>
