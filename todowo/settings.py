@@ -26,7 +26,7 @@ SECRET_KEY = '161gjs(u+s)q=9!@1xkfe29q3eutl%#n3yihl=x%9@!4v$h7@('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['karmalist.herokuapp.com','karmalist.herokuapp.com']
+ALLOWED_HOSTS = ['karmalist.herokuapp.com','karmatodo.herokuapp.com']
 
 
 # Application definition
